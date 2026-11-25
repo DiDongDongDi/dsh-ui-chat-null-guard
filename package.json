@@ -1,0 +1,38 @@
+{
+  "name": "dsh-ui-chat-null-guard",
+  "version": "0.1.0",
+  "description": "Host-side patch for DSH ui-chat turn/end null reason crash (conversation.view blank). Replaces end?.data.reason.kind with optional chaining until upstream fixes it.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "ui-chat",
+    "hotfix"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiDongDongDi/dsh-ui-chat-null-guard.git"
+  }
+}

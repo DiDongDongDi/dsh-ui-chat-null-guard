@@ -1,0 +1,4 @@
+# dsh-ui-chat-null-guard — patch ui-chat null reason on host boot.
+- insert:
+    - id: ui-chat-null-guard
+      name: dsh-ui-chat-null-guard
